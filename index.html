@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somewhere Wild</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo-light.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-thumb">
+        <img
+          id="themeIcon"
+          src="img/theme-dark.svg"
+          data-dark-icon="img/theme-dark.svg"
+          data-light-icon="img/theme-light.svg"
+          alt=""
+        >
+      </span>
+    </button>
+  
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="gallery.html">Gallery</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="home-intro" id="homeIntro">
+      <div class="home-intro-content home-intro-reveal">
+
+        <img
+          class="home-intro-logo"
+          src="img/logo-light.svg"
+          data-dark-logo="img/logo-light.svg"
+          data-light-logo="img/logo-dark.svg"
+          alt=""
+        >
+
+        <h1>SOMEWHERE WILD</h1>
+
+        <div class="home-intro-description">
+          <p>A visual journal of places, routes and landscapes discovered along the way.</p>
+
+          <p>Every photograph is a reminder that there's always somewhere wild left to discover.</p>
+
+          <p>Explore the gallery and discover the places behind each photograph.</p>
+        </div>
+      </div>
+        
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

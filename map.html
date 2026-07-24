@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somewhere Wild</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo-light.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header solid-header">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-thumb">
+        <img
+          id="themeIcon"
+          src="img/theme-dark.svg"
+          data-dark-icon="img/theme-dark.svg"
+          data-light-icon="img/theme-light.svg"
+          alt=""
+        >
+      </span>
+    </button>
+
+    <a href="index.html" class="brand logo-link" aria-label="Go to homepage">
+      <img
+        id="siteLogo"
+        src="img/logo-light.svg"
+        data-dark-logo="img/logo-light.svg"
+        data-light-logo="img/logo-dark.svg"
+        alt="Somewhere Wild"
+      >
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="gallery.html">Gallery</a>
+      <a class="active" href="map.html">Map</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="map-section">
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1VrF_unSBJy1rdOmgrXVCb6wF_O4oIFU&ehbc=2E312F&noprof=1"
+          title="Map of photographed places"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

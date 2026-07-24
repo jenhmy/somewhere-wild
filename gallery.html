@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somewhere Wild</title>
+  <link rel="icon" type="image/svg+xml" href="img/logo-light.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header solid-header">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+      <span class="theme-thumb">
+        <img
+          id="themeIcon"
+          src="img/theme-dark.svg"
+          data-dark-icon="img/theme-dark.svg"
+          data-light-icon="img/theme-light.svg"
+          alt=""
+        >
+      </span>
+    </button>
+
+    <a href="index.html" class="brand logo-link" aria-label="Go to homepage">
+      <img
+        id="siteLogo"
+        src="img/logo-light.svg"
+        data-dark-logo="img/logo-light.svg"
+        data-light-logo="img/logo-dark.svg"
+        alt="Somewhere Wild"
+      >
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="site-nav" id="siteNav">
+      <a class="active" href="gallery.html">Gallery</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section class="section gallery-section">
+
+      <div class="gallery-tools">
+
+        <div class="filter-dropdown" id="filterDropdown">
+          <button class="filter-toggle" id="filterToggle" type="button" aria-expanded="false">
+            <span id="filterToggleText">All</span>
+            <span>▾</span>
+          </button>
+
+          <div class="filter-panel" id="filterPanel">
+            <button class="filter-btn active" data-filter-type="all" data-filter-value="all">All</button>
+            <button class="filter-btn" data-filter-type="region" data-filter-value="Asturies">Asturies</button>
+            <button class="filter-btn" data-filter-type="region" data-filter-value="Catalunya">Catalunya</button>
+            <button class="filter-btn" data-filter-type="region" data-filter-value="Galiza">Galiza</button>
+            <button class="filter-btn" data-filter-type="country" data-filter-value="Iceland">Iceland</button>
+            <button class="filter-btn" data-filter-type="country" data-filter-value="Norway">Norway</button>
+          </div>
+        </div>
+
+        <div class="gallery-actions">
+
+          <button
+            class="featured-toggle"
+            id="featuredToggle"
+            type="button"
+            aria-label="Show featured places"
+          >
+            ♥
+          </button>
+
+          <div class="search-box" id="searchBox">
+            <button
+              class="search-toggle"
+              id="searchToggle"
+              type="button"
+              aria-label="Open search"
+            >
+              <img
+                id="searchIcon"
+                src="img/search-light.svg"
+                data-dark-icon="img/search-light.svg"
+                data-light-icon="img/search-dark.svg"
+                alt=""
+              >
+            </button>
+
+            <input id="searchInput" type="text" placeholder="Search...">
+          </div>
+
+        </div>
+
+      </div>
+
+      <section id="galleryInfo" class="place-submenu" aria-label="Gallery information"></section>
+      <section id="gallery" class="gallery"></section>
+
+      <div class="gallery-end">
+        <a href="#" class="back-to-top" aria-label="Back to top"><span></span></a>
+      </div>
+
+    </section>
+  
+  </main>
+  <footer class="site-footer">
+    <p>
+      © All rights reserved.
+    </p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
