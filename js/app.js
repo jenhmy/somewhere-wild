@@ -768,6 +768,11 @@ if (lightboxClose) {
 
 if (lightbox) {
   lightbox.addEventListener("click", event => {
+    if (lightboxWasSwiped) {
+      lightboxWasSwiped = false;
+      return;
+    }
+
     const clickedArrow = event.target.closest(".lightbox-arrow");
     const clickedClose = event.target.closest(".lightbox-close");
 
@@ -778,6 +783,9 @@ if (lightbox) {
 }
 
 let lightboxWheelLocked = false;
+let lightboxTouchStartX = 0;
+let lightboxTouchStartY = 0;
+let lightboxWasSwiped = false;
 
 if (lightbox) {
   lightbox.addEventListener("wheel", event => {
@@ -798,6 +806,52 @@ if (lightbox) {
       lightboxWheelLocked = false;
     }, 500);
   }, { passive: false });
+}
+
+if (lightbox) {
+  lightbox.addEventListener(
+    "touchstart",
+    event => {
+      if (!lightbox.classList.contains("open")) return;
+
+      const touch = event.changedTouches[0];
+
+      lightboxTouchStartX = touch.clientX;
+      lightboxTouchStartY = touch.clientY;
+      lightboxWasSwiped = false;
+    },
+    { passive: true }
+  );
+
+  lightbox.addEventListener(
+    "touchend",
+    event => {
+      if (!lightbox.classList.contains("open")) return;
+
+      const touch = event.changedTouches[0];
+
+      const distanceX = touch.clientX - lightboxTouchStartX;
+      const distanceY = touch.clientY - lightboxTouchStartY;
+
+      const minimumSwipeDistance = 50;
+      const isHorizontalSwipe =
+        Math.abs(distanceX) > Math.abs(distanceY);
+
+      if (
+        isHorizontalSwipe &&
+        Math.abs(distanceX) >= minimumSwipeDistance
+      ) {
+        lightboxWasSwiped = true;
+
+        if (distanceX < 0) {
+          showNextLightboxImage();
+        } else {
+          showPreviousLightboxImage();
+        }
+      }
+    },
+    { passive: true }
+  );
 }
 
 if (lightbox) {
