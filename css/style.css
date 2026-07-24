@@ -1210,21 +1210,21 @@ body.light-theme .lightbox-arrow:hover {
     );
 
     opacity: 0;
-    animation: touchInfoFadeIn 0.65s ease forwards;
-    animation-delay: calc(var(--reveal-delay, 0ms) + 250ms);
+    animation: touchInfoFadeIn 1.1s ease forwards;
+    animation-delay: calc(var(--reveal-delay, 0ms) + 350ms);
   }
 
   .card-info h2 {
     transform: translateY(24px);
-    animation: touchTitleIn 0.65s ease forwards;
-    animation-delay: calc(var(--reveal-delay, 0ms) + 300ms);
+    animation: touchTitleIn 1.1s ease forwards;
+    animation-delay: calc(var(--reveal-delay, 0ms) + 450ms);
   }
 
   .card-info p {
     opacity: 0;
     transform: translateY(-12px);
-    animation: touchTextIn 0.55s ease forwards;
-    animation-delay: calc(var(--reveal-delay, 0ms) + 450ms);
+    animation: touchTextIn 0.9s ease forwards;
+    animation-delay: calc(var(--reveal-delay, 0ms) + 700ms);
   }
 }
 
