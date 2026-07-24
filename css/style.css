@@ -1039,6 +1039,26 @@ body.light-theme .lightbox-arrow:hover {
     columns: 2;
     column-gap: 18px;
   }
+
+  .card-info {
+    inset: auto 0 0;
+    padding: 18px;
+
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.82),
+      rgba(0, 0, 0, 0)
+    );
+
+    opacity: 1;
+  }
+
+  .card-info h2,
+  .card-info p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .site-header {
     padding: 0 18px;
   }
