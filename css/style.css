@@ -1209,11 +1209,39 @@ body.light-theme .lightbox-arrow:hover {
       rgba(0, 0, 0, 0)
     );
 
-    opacity: 1;
+    opacity: 0;
+    animation: touchInfoFadeIn 0.65s ease forwards;
+    animation-delay: calc(var(--reveal-delay, 0ms) + 250ms);
   }
 
-  .card-info h2,
+  .card-info h2 {
+    transform: translateY(24px);
+    animation: touchTitleIn 0.65s ease forwards;
+    animation-delay: calc(var(--reveal-delay, 0ms) + 300ms);
+  }
+
   .card-info p {
+    opacity: 0;
+    transform: translateY(-12px);
+    animation: touchTextIn 0.55s ease forwards;
+    animation-delay: calc(var(--reveal-delay, 0ms) + 450ms);
+  }
+}
+
+@keyframes touchInfoFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes touchTitleIn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes touchTextIn {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
