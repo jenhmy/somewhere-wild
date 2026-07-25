@@ -1137,6 +1137,23 @@ body.light-theme .lightbox-arrow:hover {
     margin-top: 34px;
   }
 
+  .lightbox {
+    padding: 0;
+  }
+
+  .lightbox-frame {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100svh;
+  }
+
+  .lightbox img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100svh;
+    object-fit: contain;
+  }
+
   .lightbox-prev {
     left: 18px;
   }
@@ -1152,11 +1169,6 @@ body.light-theme .lightbox-arrow:hover {
   .lightbox-close {
     top: 18px;
     right: 18px;
-  }
-
-  .lightbox-frame {
-    max-width: 100%;
-    max-height: calc(100vh - 64px);
   }
 }
 
