@@ -947,6 +947,7 @@ body.light-theme .lightbox {
 }
 
 .lightbox-arrow {
+  display: none;
   position: fixed;
   top: 50%;
   z-index: 3001;
@@ -963,34 +964,6 @@ body.light-theme .lightbox {
   transition:
     color 0.25s ease,
     transform 0.25s ease;
-}
-
-.lightbox-arrow:hover {
-  color: #fff;
-}
-
-body.light-theme .lightbox-arrow {
-  color: rgba(0, 0, 0, 0.55);
-}
-
-body.light-theme .lightbox-arrow:hover {
-  color: #000;
-}
-
-.lightbox-prev {
-  left: 38px;
-}
-
-.lightbox-next {
-  right: 38px;
-}
-
-.lightbox-prev:hover {
-  transform: translateY(-50%) translateX(-4px);
-}
-
-.lightbox-next:hover {
-  transform: translateY(-50%) translateX(4px);
 }
 
 .lightbox-close {
@@ -1152,18 +1125,6 @@ body.light-theme .lightbox-arrow:hover {
     max-width: 100%;
     max-height: 100svh;
     object-fit: contain;
-  }
-
-  .lightbox-prev {
-    left: 18px;
-  }
-
-  .lightbox-next {
-    right: 18px;
-  }
-
-  .lightbox-arrow {
-    font-size: 42px;
   }
 
   .lightbox-close {
