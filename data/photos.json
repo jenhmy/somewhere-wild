@@ -1,5 +1,63 @@
 [
   {
+    "id": "ruta-cascada-cola-caballo",
+    "title": "Ruta Cascada Cola de Caballo",
+    "date": "2026/07/26",
+    "country": "Spain",
+    "region": "Aragón",
+    "area": "Huesca",
+    "googleMaps": "https://www.google.com/maps?cid=2994019661257353861",
+    "wikiloc": "https://www.wikiloc.com/hiking-trails/cola-de-caballo-ordesa-2017-12-07-rutas-a-pie-21550179",
+    "cover": "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo01.webp",
+    "images": [
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo01.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo02.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo03.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo04.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo05.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo06.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo07.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo08.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo09.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo10.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo11.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo13.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo14.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo15.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo16.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo17.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo18.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo19.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo20.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo21.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo22.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo23.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo24.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo25.webp",
+      "img/huesca/20260726ruta-cascada-cola-caballo/20260726ruta-cascada-cola-caballo26.webp"
+    ]
+  },
+
+  {
+    "id": "fuente-de-tamara",
+    "title": "Fuente de Tamara",
+    "date": "2026/07/25",
+    "country": "Spain",
+    "region": "Aragón",
+    "area": "Huesca",
+    "googleMaps": "https://www.google.com/maps?cid=14969480760549811761",
+    "wikiloc": "https://www.wikiloc.com/hiking-trails/mmg-guara-ruta-s-1-salto-de-bierge-fuente-tamara-barranco-falconera-o-de-peonera-rio-alcanadre-ida-270403931",
+    "cover": "img/huesca/20260725fuente-de-tamara/20260725fuente-de-tamara01.webp",
+    "images": [
+      "img/huesca/20260725fuente-de-tamara/20260725fuente-de-tamara01.webp",
+      "img/huesca/20260725fuente-de-tamara/20260725fuente-de-tamara02.webp",
+      "img/huesca/20260725fuente-de-tamara/20260725fuente-de-tamara03.webp",
+      "img/huesca/20260725fuente-de-tamara/20260725fuente-de-tamara04.webp",
+      "img/huesca/20260725fuente-de-tamara/20260725fuente-de-tamara05.webp"
+    ]
+  },
+
+  {
     "id": "niu-de-laliga",
     "title": "Niu de l'Àliga",
     "date": "2026/06/27",
